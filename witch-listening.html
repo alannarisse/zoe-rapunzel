@@ -4,36 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rapunzel - witch says spell</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
+  <link rel="stylesheet" href="style.css" />
   <body>
     <main>
-      <section class="page" id="page1">
-        <div class="witch-incantation">
-          <img src="images/bushes.jpg" class="bushes" />
-          <img src="images/witch.png" class="witch" />
-        </div>
-        <div id="prince-listening-draggable">
-          <img src="images/bushes-left.png" class="bushes-move-left" />
+      <section class="page" id="page2">
+        <div id="tower-couple">
+          <img src="images/castle.jpg" class="castle" />
+          <img src="images/princess.png" class="princess" />
           <img src="images/prince.png" class="prince" />
-          <img src="images/arrow-left.png" class="arrow-left" />
-          <a href="witch-listening.html"><img src="images/arrow-right.png" class="arrow-right" /></a>
+        </div>
+        <div id="witch-listening">
+          <img src="images/door.jpg" class="door" />
+          <img src="images/witch.png" class="witch" />
         </div>
       </section>
     </main>
     <script>
       // Make the DIV element draggable:
-      dragElement(document.getElementById('prince-listening-draggable'))
+      dragElement(document.getElementById('witch-listening'))
 
       function dragElement(elmnt) {
         var pos1 = 0,
           // pos2 = 0,
           pos3 = 0
         // pos4 = 0
-        if (document.getElementById('prince-listening-draggable')) {
+        if (document.getElementById('witch-listening')) {
           // if present, the header is where you move the DIV from:
-          document.getElementById('prince-listening-draggable').onmousedown = dragMouseDown
+          document.getElementById('witch-listening').onmousedown = dragMouseDown
         } else {
           // otherwise, move the DIV from anywhere inside the DIV:
           elmnt.onmousedown = dragMouseDown

@@ -20,12 +20,12 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.bushes {
+.witch-incantation .bushes {
   height: 100vh;
   z-index: 0;
   opacity: 0.8;
 }
-.witch {
+.witch-incantation .witch {
   height: 60%;
   position: absolute;
   left: 10%;
@@ -43,14 +43,14 @@ body {
   cursor: move;
 }
 
-.bushes-move-left {
+#prince-listening-draggable .bushes-move-left {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: 2;
   height: 100vh;
 }
-.prince {
+#prince-listening-draggable .prince {
   position: absolute;
   left: 28%;
   bottom: 5%;
@@ -72,6 +72,7 @@ body {
   z-index: 5;
 }
 
+/* START PAGE 2 witch-listening.html */
 #page2 {
   position: relative;
   height: 100vh;
@@ -81,6 +82,10 @@ body {
 #tower-couple {
   position: relative; /* make my kids position themselves relative to my size */
   position: absolute; /* absolutely position me inside #page2 */
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
 }
 #tower-couple .castle {
   position: absolute;
@@ -90,18 +95,19 @@ body {
   top: 0;
   z-index: -1;
 }
-#tower-couple .prince {
+#page2 .prince {
   position: absolute;
-  top: 1%;
-  left: 15%;
+  height: 60vh;
+  bottom: 18%;
+  left: 20%;
   z-index: 3;
 }
-#tower-couple .princess {
+#page2 .princess {
   position: absolute;
-  bottom: 60%;
-  left: 15%;
-  z-index: 1;
-  height: 60vh;
+  bottom: 18%;
+  left: 1%;
+  z-index: 3;
+  height: 65vh;
 }
 
 #witch-listening {
@@ -117,4 +123,7 @@ body {
 #witch-listening .witch {
   height: 60vh;
   z-index: 4;
+  position: absolute;
+  right: 12%;
+  bottom: 13%;
 }
